@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASU Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--header section starts--> 
+      <div class="container">
+        <header class="header">
+         <div class="logo">
+            <img src="img/lasu.png" alt="lasu logo">
+            </div>
+            <h1 id="title" class="text-center">Lasu Survey Form</h1>
+            <p id="description" class="description text-center">Thank you for taking the time to help us improve the School. </p>
+            <p id="description" class="description text-center"><em>WE ARE LASU, WE ARE  GREAT</em></p>
+            </header>
+    <!--header section ends-->
+
+        <form action="#" class="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label><br>
+            <input type="text" id="name" name="name"  class="form-control" placeholder="Enter Your Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="number" id="number-label">Age (optional)</label><br>
+            <input type="number" id="number" name="age" placeholder="Age" min="16" max="80">
+          </div>
+
+
+          <div class="form-group">
+          <label for="text">Which option best describe your current role</label><br>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select a role</option>
+            <option value="Full-time Student">Full-time Student</option>
+            <option value="Part-time Student">Part-time Student</option>
+            <option value="Teahing Staff">Teaching Staff</option>
+            <option value="Non-teaching Staff">Non-teaching Staff</option>
+            <option value="Sandwich Student">Sandwich Student</option>
+            <option value="Diploma Student">Diploma Student</option>
+            <option value="postgraduate">Postgraduate</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+          </div>
+            <br>
+            <div class="form-group">
+          <p>Would you reommend LASU for a friend</p><br>
+          <label>
+          <input type="radio" id="definitely" value="definitely" name="user-reommended" class="input-radio" checked>
+          Definitely</label><br>
+          <label>
+          <input type="radio" id="Maybe" name="user-reommended" value="maybe" class="input-radio">
+          Maybe</label><br>
+          <label>
+          <input type="radio" id="not sure" name="user-reommended" value="not-sure" class="input-radio">
+          Not sure</label>
+          </div>
+
+          <div class="form-group">
+            <p>What is your favorite place on campus?</p><br>
+            <label>
+            <input type="checkbox" name="prefer" value="faculty of arts" class="input-checkbox">
+              Faculty of Arts</label><br>
+
+             <label>
+            <input type="checkbox" name="prefer" value="faculty of education" class="input-checkbox">
+            Faculty of Education</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="faulty of social sciences" class="input-checkbox">
+            Faculty of Social sicence</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="faculty of law"  class="input-checkbox">
+            Faculty of Law</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="faculty of management sciences" class="input-checkbox">
+            Faculty of Management sicences</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="faculty of sciences" class="input-checkbox">
+            Faculty of Sciences</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="faculty of mass communiation" class="input-checkbox">
+           Faculty of Mass Communiation</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="school of transportation" class="input-checkbox">
+            School of Transportation</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="love garden" class="input-checkbox">
+            Love Garden</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="arcade" 
+            class="input-checkbox">
+           Arcade</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="education quadrangle" class="input-checkbox">
+            Education Quadrangle</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="chapel" 
+            class="input-checkbox">
+            Chapel</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="mosque"
+            class="input-checkbox">
+            Mosque</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="femi gbajabiamila conference centre"
+            class="input-checkbox">
+            Femi Gbajabiamila Conference Centre</label><br>
+
+            <label>
+            <input type="checkbox" name="prefer" value="eco market (iya khalid)">
+             Eco market (Iya khalid spot)</label>
+             </div>
+            
+
+            <div class="form-group">
+            <p>What is your biggest <span>FEAR</span> on campus (LASU)</p><br>
+
+            <select name="mostLike" id="most-fear" class="form-control">
+                <option disabled seleted value>Select an option</option>
+
+                <option value="lidc">LIDC</option>
+                <option value="attendance">Attendance</option>
+                <option value="lecturer">Lecturer</option>
+                <option value="vice chanellor">Vice Chanellor (VC)</option>
+                <option value="examination">Examination</option>
+                <option value="siu">Student Investigation Union (SIU)</option>
+                <option value="disobeying the school conduct">Disobeying the school conduct</option>
+                <option value="prefer not to say">Prefer not to say</option>
+            </select>
+
+            <div class="form-group">
+            <p>Any comments or suggestions</p>
+            <textarea name="comment" id="comment" class="input-textarea" placeholder="Enter your comment here......."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+        </form>
+      
+      </div>
+</body>
+</html>
